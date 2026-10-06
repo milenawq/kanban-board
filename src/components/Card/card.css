@@ -1,0 +1,47 @@
+.kanban-card {
+  background-color: var(-board-bg);
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  cursor: grab;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+ 
+.kanban-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border-color: var(--primary-color);
+}
+ 
+.kanban-card:active {
+  cursor: grabbing;
+}
+ 
+.card-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-color);
+  margin-bottom: 4px;
+}
+ 
+.card-description {
+  font-size: 12px;
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.edit-button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+ 
